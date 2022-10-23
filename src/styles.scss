@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap');
+.App {
+  font-family: 'Public Sans';
+  margin: 1em;
+  .h1{
+    color: #032A54;
+    margin: 0;
+    width: max-content;
+    text-align: center;
+    font-size: 3.5em;
+    dfn{
+      display: block;
+      text-transform: uppercase;
+      letter-spacing: 0.2rem;
+      font-size: 0.6rem;
+    }
+    .bg-cos-orange{
+      color: #cf2e2e;
+    }
+  }
+
+  h1{
+    background: linear-gradient(90deg, #032A54 0%, #053971 100%);
+    color: white;
+    text-transform: uppercase;
+    padding: 0.5em;
+  }
+  .btn-cos-red{
+    font-weight: bold;
+    border: none;
+    z-index: 5;
+    border-radius: 0.3em;
+    position: relative;
+    padding: 0.5rem;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, #55951c 0%, #a8ce88 100%);
+    perspective: 100%;
+    text-align: center;
+    text-decoration: none;
+    &::before{
+      border-radius: 0.3em;
+      z-index: -1;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #a8ce88 0%, #c0e0a6 100%);
+      transform-origin: 0% 100%;
+      transform: rotateY(90deg);
+      transition: transform 0.2s;
+    }
+    &:hover{
+      &::before{
+        transform: rotateY(0);
+        transition: transform 0.2s;
+      }
+    }
+  }
+}

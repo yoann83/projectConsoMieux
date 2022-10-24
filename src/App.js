@@ -5,7 +5,7 @@ export default function App() {
     <div className="App">
       <div className="box-title">
         <img
-          src="https://raw.githubusercontent.com/yoann83/media/main/consomieux.png"
+          src="https://raw.githubusercontent.com/yoann83/media/main/consomieuxFini.png"
           width="300"
         />
       </div>
